@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Estilos de Jogo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+        }
+
+        h1 {
+            color: #00ffff;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        .styled-table thead tr {
+            background-color: #007bff;
+            color: #ffffff;
+            text-align: left;
+            border-bottom: 2px solid #0056b3;
+        }
+
+        .styled-table th, .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #333333;
+            transition: background-color 0.3s ease;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #2a2a2a;
+        }
+
+        .styled-table tbody tr:hover {
+            background-color: #383838;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #007bff;
+        }
+
+        .star-rating {
+            font-size: 1.2em;
+            color: #333333; /* Cor para estrelas vazias */
+            letter-spacing: 2px;
+        }
+
+        .star-rating .filled-star {
+            color: #ffd700; /* Cor para estrelas preenchidas */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Estilos de Jogo</h1>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Ataque (ATK)</th>
+                <th>Meio-Campo (MEI)</th>
+                <th>Defesa (DEF)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiro de finesses</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Tiro de Chip</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Tiro de poder</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Bola Morta</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Cabeçalho de precisão</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Acrobático</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Tiro rasteiro</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Transformador de jogo</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Passe Incisivo</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Passe Pingado</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Passe de bola longa</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Tiki Taka</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Passe chicoteado</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Inventivo</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Jóquei</td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Bloquear</td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Interceptar</td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Antecipar</td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Slide Tackle</td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Fortaleza Aérea</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Técnico</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Rápido</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Primeiro toque</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Trapaceiro</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Imprensa comprovada</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Passo rápido</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Implacável</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Lançamento longo</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Bruiser</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Executor</td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Lançamento distante</td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="empty-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Trabalho de pés</td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Reivindicador cruzado</td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Sair correndo</td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Longo alcance</td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Defletor</td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                </td>
+                <td class="star-rating">
+                    <span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span><span class="filled-star">★</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
